@@ -38,7 +38,7 @@
     display: flex;
 }
 
-@media all and (max-width: 500px){
+@media all and (max-width: 550px){
     .nav{
         height: 70px;
         padding-left: 30px;
