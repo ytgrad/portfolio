@@ -63,6 +63,20 @@
     width: 45px;
 }
 
+.textPanel{
+    width: 95%;
+    height: 6.5%;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    font-size: 23px;
+    font-weight: 500;
+}
+
 .appPanel{
     width: 100%;
     height: 85%;
@@ -187,19 +201,7 @@
     background-color: rgba(255, 255, 255, 0.4);
 }
 
-.textPanel{
-    width: 95%;
-    height: 6.5%;
-    border-radius: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.2);
-    display: flex;
-    align-items: center;
-    padding-left: 35px;
-    font-size: 25px;
-    font-weight: 500;
-}
+
 
 @media all and (max-width: 400px){
     .outerFrame{
@@ -288,7 +290,7 @@
         font-weight: 500;
     }
 }
-@media all and (max-width: 550px) and (min-width: 401px){
+@media all and (max-width: 700px) and (min-width: 401px){
     .outerFrame{
         width:90vw;
         height: 90vh;
@@ -372,5 +374,114 @@
         border-radius: 12px;
         margin-top: 15px;
         font-weight: 500;
+    }
+}
+
+@media all and (max-width: 1750px) and (min-width: 1101px) {
+    .outerFrame{
+        width: 400px;
+        height: 770px;
+        border-radius: 50px;
+    }
+    
+    .innerFrame{
+        width: 380px;
+        height: 750px;
+        border-radius: 40px;
+    }
+
+    .statusBar{
+        padding-left: 30px;
+        padding-right: 30px;
+        height: 50px;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .time{
+        letter-spacing: 0px;
+    }
+    .otherStuff img{
+        height: 21px;
+        margin-left: 10px;
+    }
+    
+    .camera img{
+        width: 35px;
+    }
+
+    .textPanel{
+        width: 95%;
+        height: 6%;
+        border-radius: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.2);
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .appPanel{
+        height: 83%;
+        padding: 30px 30px 400px 20px;
+    }
+    
+    .appPanel img{
+        width: 80px;
+        height: 80px;
+        border-radius: 15px;
+        transition: all 0.3s;
+    }
+
+    .appDiv{
+        width: 100px;
+        height: 105px;
+        margin: 10px;
+        font-size: 15px;
+    }
+    
+    .backArrow{
+        height: 45px;
+        padding-left: 20px;
+    }
+    
+    .backArrow img{
+        width: 30px;
+        height: auto;
+    }
+    .appDetailsDiv{
+        padding: 40px;
+    }
+    
+    .appDetailsLogo img{
+        width: 100px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .appDescription{
+        width: 55%;
+        margin-left: 20px;
+        /* background-color: rgba(255, 255, 255, 0.4); */
+    }
+    
+    .appDescName{
+        font-size: 23px;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+    
+    .appDescDesc{
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    .downloadBtn{
+        height: 40px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        font-size: 16px;
     }
 }
