@@ -288,7 +288,7 @@
         font-weight: 500;
     }
 }
-@media all and (max-width: 500px) and (min-width: 401px){
+@media all and (max-width: 550px) and (min-width: 401px){
     .outerFrame{
         width:90vw;
         height: 90vh;
