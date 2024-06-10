@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.outerFrame{
+    transition: all 0.5s;
+}
+.outerFrame{
+    width: 700px;
+    height: 1300px;
+    /* margin: 100px; */
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerFrame{
+    width: 660px;
+    height: 1260px;
+    border-radius: 80px;
+    /* background-color: aqua; */
+   background: url("wallpaper3.jpg"); 
+   background-position: left;
+   background-size: cover;
+   background-repeat: no-repeat;
+    /* background-color: cyan; */
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.statusBar{
+    /* position: absolute; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.time{
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 2px;
+    /* background-color: rgba(255, 255, 255, 0.3); */
+}
+
+.otherStuff img{
+    height: 27px;
+    margin-left: 10px;
+}
+
+.camera img{
+    width: 45px;
+}
+
+.appPanel{
+    width: 100%;
+    height: 85%;
+    /* border: 1px solid rgba(255, 255, 255, 0.25); */
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    display: flex;
+    flex-flow: wrap;
+    position: relative;
+    /* justify-content: flex-start; */
+    /* flex-wrap: wrap; */
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 530px;
+    transition: all 0.3s;
+    /* opacity: 0; */
+}
+
+.appPanel img{
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    transition: all 0.3s;
+    /* cursor: pointer; */
+}
+
+.appDiv{
+    /* opacity: 0; */
+    width: 120px;
+    height: 130px;
+    margin: 15px;
+    display: flex;
+    /* background-color: rgba(255, 255, 255, 0.4); */
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.appDetailsPage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s;
+    /* opacity: 0; */
+}
+
+.backArrow{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s;
+}
+
+.backArrow img{
+    height: auto;
+    width: 40px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.appDetailsDiv{
+    /* height: 80%; */
+    display: flex;
+    padding: 50px;
+    transition: all 0.3s;
+    /* background-color: rgba(255, 255, 255, 0.4); */
+}
+
+.appDetailsLogo img{
+    width: 150px;
+    height: auto;
+    transition: all 0.3s;
+}
+
+.appDescription{
+    width: 60%;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 40px;
+    /* background-color: rgba(255, 255, 255, 0.4); */
+}
+
+.appDescName{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.appDescDesc{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+
+.downloadBtn{
+    transition: all 0.3s;
+    height: 50px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 15px;
+    /* background-color: #08a474; */
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-weight: 600;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.downloadBtn:active{
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.textPanel{
+    width: 95%;
+    height: 6.5%;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    padding-left: 35px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+@media all and (max-width: 400px){
+    .outerFrame{
+        width:90vw;
+        height: 90vh;
+        border-radius: 50px;
+        margin-bottom: 10vh;
+    }
+    .innerFrame{
+        width:85vw;
+        height: 87vh;
+        border-radius: 40px;
+    }
+    .statusBar{
+        padding-left: 30px;
+        padding-right: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+    .otherStuff img{
+        height: 16px;
+        margin-left: 10px;
+    }
+    
+    .camera img{
+        width: 25px;
+    }
+    .textPanel{
+        height: 7.5%;
+        padding-left: 20px;
+        font-size: 16px;
+    }
+    .appPanel{
+        height: 82%;
+        background-color: rgba(255, 255, 255, 0.15);
+        padding: 20px 10px 200px 12px;
+    }
+    .appPanel img{
+        width: 65px;
+        height: 65px;
+        border-radius: 15px;
+    }
+    .appDiv{
+        width: 80px;
+        height: 90px;
+        margin: 10px;
+        font-size: 12px;
+    }
+    .backArrow{
+        height: 45px;
+        padding-left: 20px;
+    }
+    
+    .backArrow img{
+        height: auto;
+        width: 27px;
+    }
+    .appDetailsDiv{
+        padding: 30px 0 0 25px;
+    }
+    
+    .appDetailsLogo img{
+        width: 100px;
+        height: auto;
+    }
+    
+    .appDescription{
+        width: 50%;
+        margin-left: 20px;
+    }
+    .appDescName{
+        font-size: 22px;
+        font-weight: 600;
+    }
+    
+    .appDescDesc{
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .downloadBtn{
+        height: 40px;
+        font-size: 15px;
+        letter-spacing: 1.5px;
+        border-radius: 12px;
+        margin-top: 15px;
+        font-weight: 500;
+    }
+}
+@media all and (max-width: 500px) and (min-width: 401px){
+    .outerFrame{
+        width:90vw;
+        height: 90vh;
+        border-radius: 50px;
+        margin-bottom: 10vh;
+    }
+    .innerFrame{
+        width:85vw;
+        height: 87vh;
+        border-radius: 40px;
+    }
+    .statusBar{
+        padding-left: 30px;
+        padding-right: 30px;
+        height: 30px;
+        font-size: 15px;
+    }
+    .otherStuff img{
+        height: 18px;
+        margin-left: 10px;
+    }
+    .camera img{
+        width: 25px;
+    }
+    .textPanel{
+        padding-left: 20px;
+        font-size: 18px;
+    }
+    .appPanel{
+        height: 84%;
+        background-color: rgba(255, 255, 255, 0.15);
+        padding: 23px 20px 500px 20px;
+    }
+    .appPanel img{
+        width: 75px;
+        height: 75px;
+        border-radius: 15px;
+    }
+    .appDiv{
+        width: 90px;
+        height: 100px;
+        margin: 10px;
+        font-size: 15px;
+    }
+    .backArrow{
+        height: 50px;
+        padding-left: 20px;
+    }
+    
+    .backArrow img{
+        width: 30px;
+        height: auto;
+    }
+    .appDetailsDiv{
+        padding: 30px 0 0 25px;
+    }
+    
+    .appDetailsLogo img{
+        width: 110px;
+        height: auto;
+        transition: all 0.3s;
+    }
+    
+    .appDescription{
+        width: 50%;
+        margin-left: 20px;
+    }
+    .appDescName{
+        font-size: 22px;
+        font-weight: 600;
+    }
+    
+    .appDescDesc{
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .downloadBtn{
+        height: 40px;
+        font-size: 15px;
+        letter-spacing: 1.5px;
+        border-radius: 12px;
+        margin-top: 15px;
+        font-weight: 500;
+    }
+}

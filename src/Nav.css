@@ -1,0 +1,73 @@
+.nav{
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    padding-left: 150px;
+}
+
+.xmlName{
+    font-size: 40px;
+    font-weight: 600;
+    margin-right: 60px;
+}
+
+.socialsButton{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.socialsButton img{
+    width: 70%;
+    height: 70%;
+    
+}
+
+.socialsButtonContainer{
+    display: flex;
+}
+
+@media all and (max-width: 500px){
+    .nav{
+        height: 70px;
+        padding-left: 30px;
+        padding-right: 15px;
+        justify-content: space-between;
+    }
+
+    .xmlName{
+        width: 120px;
+        font-size: 30px;
+    }
+
+    .socialsButtonContainer{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .socialsButton{
+        width: 45px;
+        height: 45px;
+        position: relative;
+        margin-right: 5px;
+    }
+
+    .socialsButton img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+}
