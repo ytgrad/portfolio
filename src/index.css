@@ -10,7 +10,7 @@
 
 body{
   width: 100vw;
-  background: url("background4.png");
+  background: url("../public/background4.png");
   background-position: top;
   background-size: cover;
   color: white;

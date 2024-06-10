@@ -20,7 +20,7 @@
     height: 1260px;
     border-radius: 80px;
     /* background-color: aqua; */
-   background: url("wallpaper3.jpg"); 
+   background: url("../public/wallpaper3.jpg"); 
    background-position: left;
    background-size: cover;
    background-repeat: no-repeat;
