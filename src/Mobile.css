@@ -131,6 +131,8 @@
     /* opacity: 0; */
 }
 
+
+
 .backArrow{
     height: 70px;
     display: flex;
@@ -186,6 +188,7 @@
 .downloadBtn{
     transition: all 0.3s;
     height: 50px;
+    width: 100%;
     margin-bottom: 10px;
     border: 1px solid rgba(255, 255, 255, 0.4);
     border-radius: 15px;

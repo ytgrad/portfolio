@@ -13,11 +13,13 @@ export default function Mobile() {
       name: "Calculator",
       description: "A basic calculator app.",
       icon: "calculator.png",
+      downloadUrl: "/download/calculator",
     },
     {
       name: "Quiz",
       description: "An interactive quiz app.",
       icon: "quiz.png",
+      downloadUrl: "/download/quiz",
     },
   ];
 
@@ -96,7 +98,9 @@ export default function Mobile() {
                       {appDetails[currentApp].description}
                     </p>
                   </div>
-                  <button className="downloadBtn">Download</button>
+                  <a href={`${appDetails[currentApp].downloadUrl}`}>
+                    <button className="downloadBtn">Download</button>
+                  </a>
                 </div>
               </div>
             </div>
