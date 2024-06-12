@@ -9,6 +9,7 @@
 }
 
 body{
+  transition: all 0.3s;
   width: 100vw;
   background: url("../public/background4.png");
   background-position: top;
@@ -16,6 +17,7 @@ body{
   color: white;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 .flex{
@@ -30,6 +32,25 @@ body{
 a{
   text-decoration: none;
   color: white;
+}
+
+.splash{
+  z-index: 20;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(24, 24, 24);
+  display: flex;
+  justify-content: center;
+  font-weight: 300;
+  font-size: 5vw;
+  letter-spacing: 4px;
+}
+
+.splash p{
+  margin-top: 48vh;
 }
 
 .container{
@@ -53,6 +74,9 @@ a{
     /* background-color: rgba(255, 255, 255, 0.1); */
     padding: 15px;
   }
+  .splash{
+    font-size: 10vw;
+  }
 }
 
 @media all and (max-width: 1100px) and (min-width: 701px) {
@@ -64,11 +88,17 @@ a{
     padding: 15px;
     margin-bottom: 40px;
   }
+  .splash{
+    font-size: 7vw;
+  }
 }
 
 @media all and (max-width: 1750px) and (min-width: 1101px) {
   .container{
     padding: 120px 40px 0 40px;
     margin-bottom: 50px;
+  }
+  .splash{
+    font-size: 6vw;
   }
 }
