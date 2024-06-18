@@ -21,6 +21,18 @@ export default function Mobile() {
       icon: "quiz.png",
       downloadUrl: "/download/quiz",
     },
+    {
+      name: "Countdown",
+      description: "A countdown timer app.",
+      icon: "countdown.png",
+      downloadUrl: "/download/countdown",
+    },
+    {
+      name: "Stopwatch",
+      description: "A stopwatch app.",
+      icon: "stopwatch.png",
+      downloadUrl: "/download/stopwatch",
+    },
   ];
 
   const [currentApp, setCurrentApp] = useState(0);

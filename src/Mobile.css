@@ -238,7 +238,7 @@
     .appPanel{
         height: 82%;
         background-color: rgba(255, 255, 255, 0.15);
-        padding: 20px 10px 200px 12px;
+        padding: 20px 10px 38vh 12px;
     }
     .appPanel img{
         width: 65px;
@@ -248,7 +248,7 @@
     .appDiv{
         width: 80px;
         height: 90px;
-        margin: 10px;
+        margin: 2vw;
         font-size: 12px;
     }
     .backArrow{
@@ -331,10 +331,11 @@
         border-radius: 15px;
     }
     .appDiv{
-        width: 90px;
+        width: 80px;
         height: 100px;
-        margin: 10px;
+        margin: 2.5vw;
         font-size: 15px;
+        font-size: 13px;
     }
     .backArrow{
         height: 50px;
@@ -440,7 +441,8 @@
     .appDiv{
         width: 100px;
         height: 105px;
-        margin: 10px;
+        margin: 5px;
+        margin-bottom: 20px;
         font-size: 15px;
     }
     
