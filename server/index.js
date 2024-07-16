@@ -16,6 +16,9 @@ app.get("/download/stopwatch", (req, res) => {
 app.get("/download/countdown", (req, res) => {
   res.download("./dist/countdown.apk");
 });
+app.get("/download/cv", (req, res) => {
+  res.download("./dist/resume.pdf");
+});
 
 app.listen(PORT, () => {
   console.log(`listening on ${PORT}`);
