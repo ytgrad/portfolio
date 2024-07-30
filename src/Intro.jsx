@@ -12,7 +12,7 @@ export default function Intro() {
           an <span style={{ color: "#a4c636" }}>Android Developer</span>
         </div>
       </div>
-      <a href="https://shivtiwari.site/download/cv">
+      <a href="https://shivtiwari.site/resume.pdf">
         <button className="cvBtn">
           <p>My Résumé</p>
           <img src="download.png" />
